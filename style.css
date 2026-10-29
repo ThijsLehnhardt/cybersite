@@ -1,0 +1,141 @@
+/* Lettertype */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap');
+
+/* body */
+body {
+    margin: 0;
+    background-color: #080d0d;
+    color: #4affedb3;
+    font-family: 'Orbitron', sans-serif;
+}
+
+/* header */
+header {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 25px 6%;
+}
+
+/* Logo,  voor alle vervagingen had ik online een tutorial opgezocht */
+header img {
+    width: 180px;
+    height: auto;
+      filter: drop-shadow(0 0 25px rgba(255, 48, 79, 0.35));
+}
+
+/* Navigatie */
+nav {
+    padding: 14px 20px;
+
+    background: linear-gradient(
+        90deg,
+        rgba(110, 12, 25, 0.35),
+        rgba(8, 8, 8, 0.2)
+    );
+
+    border-bottom: 1px solid #ff304f;
+}
+
+nav a {
+    color: #ff304fd0;
+    text-decoration: none;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+nav ul {
+    display: flex;
+    gap: 35px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* hover kleur */
+nav a:hover {
+    color: #4affedb3;
+}
+
+/* main */
+main {
+    position: relative;
+    min-height: 850px;
+    padding: 30px 6% 50px;
+    overflow: hidden;
+
+    background: radial-gradient(
+        ellipse at 70% 65%,
+        rgba(100, 0, 15, 0.18),
+        transparent 65%
+    );
+}
+
+/* Arm positie (de z index moest ik opzoeken want ik wou de arm achter de tekst hebben. */
+.arm {
+    position: absolute;
+    bottom: 0;
+    right: 8%;
+    width: 48%;
+    z-index: 0;
+    opacity: 0.75;
+}
+
+/* Arm img */
+.arm img {
+    width: 100%;
+    height: auto;
+}
+
+/* stijl tekstblokken */
+.text-block {
+    position: relative;
+    z-index: 1;
+    width: 52%;
+    margin-left: 0;
+    margin-bottom: 35px;
+    padding: 22px 25px;
+
+    background: linear-gradient(
+        90deg,
+        rgba(110, 12, 25, 0.45),
+        rgba(55, 8, 15, 0.25),
+        rgba(8, 13, 13, 0.9)
+    );
+
+    border-left: 3px solid #ff304f;
+
+    box-shadow: -5px 0 15px rgba(255, 48, 79, 0.15);
+
+    line-height: 1.8;
+    font-size: 14px;
+}
+
+/* tekstblok 1 */
+.block-one {
+    margin-top: 20px;
+    width: 50%;
+}
+
+/* tekstblok 2 */
+.block-two {
+    margin-left: 5%;
+    width: 52%;
+}
+
+/* tekstblok 3 */
+.block-three {
+    margin-left: 0;
+    width: 55%;
+}
+
+/* tekstblok 4 */
+.block-four {
+    margin-left: 5%;
+    width: 47%;
+}
+
+/* spacing alinea's */
+.text-block p {
+    margin-bottom: 15px;
+}
